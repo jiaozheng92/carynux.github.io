@@ -38,7 +38,7 @@
                     <!--
                     {% if site.douban_username %}
                     <li>
-                        <a href="http://www.douban.com/people/{{ site.douban_username }}">
+                        <a href="https://www.douban.com/people/{{ site.douban_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-douban fa-stack-1x fa-inverse"></i>
@@ -74,7 +74,7 @@
                     <!--
                     {% if site.weibo_username %}
                     <li>
-                        <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
+                        <a target="_blank" href="https://weibo.com/{{ site.weibo_username }}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
@@ -94,20 +94,26 @@
 </footer>
 
 <!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
-<!-- Bootstrap Core JavaScript -->
+
+
 <script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
 
-<!-- Custom Theme JavaScript -->
+
 <script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
 
 
-
-<!-- Highlight.js -->
 <script>
-async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js",function(){
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+async("https://cdn.bootcss.com/highlight.js/8.6/highlight.min.js",function(){
     hljs.initHighlightingOnLoad();
 })
 </script>
-<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
