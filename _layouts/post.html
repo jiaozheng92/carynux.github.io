@@ -11,7 +11,7 @@ layout: default
 <header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="Tags">
                         {% for tag in page.tags %}
@@ -90,24 +90,6 @@ layout: default
 </article>
 
 
-
-<!--&lt;!&ndash; 多说公共JS代码 start (一个网页只需插入一次) &ndash;&gt;-->
-<!--<script type="text/javascript">-->
-    <!--var duoshuoQuery = {short_name:"jiaozheng"};-->
-    <!--(function() {-->
-        <!--var ds = document.createElement('script');-->
-        <!--ds.type = 'text/javascript';ds.async = true;-->
-        <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';-->
-        <!--ds.charset = 'UTF-8';-->
-        <!--(document.getElementsByTagName('head')[0]-->
-            <!--|| document.getElementsByTagName('body')[0]).appendChild(ds);-->
-    <!--})();-->
-<!--</script>-->
-<!-- 多说公共JS代码 end -->
-
-<!-- async load function -->
-
-<!-- anchor-js, Doc:https://bryanbraun.github.io/anchorjs/ -->
 <script>
     function async(u, c) {
         var d = document, t = 'script',
@@ -126,6 +108,18 @@ layout: default
         anchors.add().remove('.intro-header h1').remove('.subheading');
     })
 </script>
+<!-- utteranc 评论 -->
+
+<script src="https://utteranc.es/client.js"
+        repo="cnfeat/cnfeat.github.io"
+        issue-term="pathname"
+        label="✨💬✨ "
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<!-- utteranc 评论 -->
 <style>
     /* place left on bigger screen */
     @media all and (min-width: 800px) {
