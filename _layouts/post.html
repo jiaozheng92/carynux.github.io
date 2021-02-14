@@ -11,7 +11,7 @@ layout: default
 <header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
                     <div class="Tags">
                         {% for tag in page.tags %}
@@ -25,6 +25,22 @@ layout: default
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
+            <!-- Side Catalog Container -->
+        {% unless page.no-catalog %}
+        <div class="
+            col-lg-2 col-lg-offset-0
+            visible-lg-block
+            sidebar-container
+            catalog-container">
+            <div class="side-catalog">
+                <hr class="hidden-sm hidden-xs">
+                <h5>
+                    <a class="catalog-toggle" href="#">CATALOG</a>
+                </h5>
+                <ul class="catalog-body"></ul>
+            </div>
+        </div>
+    {% endunless %}
         </div>
     </div>
 </header>
