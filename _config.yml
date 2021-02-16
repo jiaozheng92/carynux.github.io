@@ -5,6 +5,7 @@ tagline: "cn"
 description: "思考·记录"
 baseurl: ""
 url: "https://jiaozheng.me"
+github_username: "carynux"
 
 # About/contact
 owner:
