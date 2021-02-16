@@ -20,6 +20,8 @@ $(document).ready(function() {
             }, 800);
             return false;
         });
+        var headerHeight = $('.navbar-custom').height(),
+            bannerHeight  = $('.intro-header .container').height();     
         $(window).on('scroll', {
             previousTop: 0
                 },
