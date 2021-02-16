@@ -25,22 +25,6 @@ layout: default
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
                 </div>
             </div>
-            <!-- Side Catalog Container -->
-        {% unless page.no-catalog %}
-        <div class="
-            col-lg-2 col-lg-offset-0
-            visible-lg-block
-            sidebar-container
-            catalog-container">
-            <div class="side-catalog">
-                <hr class="hidden-sm hidden-xs">
-                <h5>
-                    <a class="catalog-toggle" href="#">CATALOG</a>
-                </h5>
-                <ul class="catalog-body"></ul>
-            </div>
-        </div>
-    {% endunless %}
         </div>
     </div>
 </header>
@@ -101,6 +85,22 @@ layout: default
                 </div>
                 <!-- 多说评论框 end -->
             </div>
+            <!-- Side Catalog Container -->
+            {% unless page.no-catalog %}
+                <div class="
+                    col-lg-2 col-lg-offset-0
+                    visible-lg-block
+                    sidebar-container
+                    catalog-container">
+                    <div class="side-catalog">
+                        <hr class="hidden-sm hidden-xs">
+                        <h5>
+                            <a class="catalog-toggle" href="#">CATALOG</a>
+                        </h5>
+                        <ul class="catalog-body"></ul>
+                    </div>
+                </div>
+            {% endunless %}
         </div>
     </div>
 </article>
