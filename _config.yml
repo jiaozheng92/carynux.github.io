@@ -5,7 +5,7 @@ tagline: "cn"
 description: "思考·记录"
 baseurl: ""
 url: "https://jiaozheng.me"
-github_username: "carynux"
+
 
 # About/contact
 owner:
@@ -17,6 +17,7 @@ owner:
 gavatar: img/favicon.png
 favicon: img/favicon.png
 
+github_username: carynux
 douban_username:
 twitter_username:
 github_username:
