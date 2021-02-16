@@ -1,8 +1,9 @@
 ---
 layout: post
-title: 读《人如何让改变》第一章有感
+title: 读《人如何改变》第一章有感
 date: 2018-10-3
 categories: blog
+catalog: true
 tags: [读书笔记]
 description: 初试上帝的福音。
 ---
