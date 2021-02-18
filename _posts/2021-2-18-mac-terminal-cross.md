@@ -24,9 +24,10 @@ brew install proxychains-ng
 curl -L https://raw.githubusercontent.com/FrankFang/dot-files/master/proxychains.conf > ~/.proxychains.conf
 ```
 * 打开 ShadowSocks 里关于Socks5的设置页面，找到对应的端口号,比如下图的端口号是1086
-![avatar](../article_image/1.png)
+![avatar](https://raw.githubusercontent.com/carynux/Image-Hosting/master/1.png)
 修改.proxychains.conf文件里的端口号为上图的端口号
-![avatar](../article_image/2.png)
+![avatar](https://raw.githubusercontent.com/carynux/Image-Hosting/master/2.png)
+
 * 添加 bash alias，运行
 ```
 touch ~/.bashrc; echo 'alias pc="proxychains4 -f ~/.proxychains.conf"' >> ~/.bashrc
@@ -48,8 +49,8 @@ System Integrity Protection status: disabled.
 ```
 我们再试一次：
 ```
-pc curl myip.ipip.net
-[proxychains] config file found: /Users/cary/.proxychains.conf
-[proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib
-当前 IP：103.152.221.201  来自于：中国 香港   joyso.app
+pc curl myip.ipip.net  
+[proxychains] config file found: /Users/cary/.proxychains.conf  
+[proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib  
+当前 IP：103.152.221.201  来自于：中国 香港   joyso.app  
 ```
