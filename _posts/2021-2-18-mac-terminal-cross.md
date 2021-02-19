@@ -25,11 +25,11 @@ curl -L https://raw.githubusercontent.com/FrankFang/dot-files/master/proxychains
 ```
 * 打开 ShadowSocks 里关于Socks5的设置页面，找到对应的端口号,比如下图的端口号是1086
 
-![avatar](https://raw.githubusercontent.com/carynux/Image-Hosting/master/1.png)
+[![yfQSJg.md.png](https://s3.ax1x.com/2021/02/19/yfQSJg.md.png)](https://imgchr.com/i/yfQSJg)
 
 * 修改.proxychains.conf文件里的端口号为上图的端口号
 
-![avatar](https://raw.githubusercontent.com/carynux/Image-Hosting/master/2.png)
+[![yfQpWQ.md.png](https://s3.ax1x.com/2021/02/19/yfQpWQ.md.png)](https://imgchr.com/i/yfQpWQ)
 
 * 添加 bash alias，运行
 ```
@@ -47,16 +47,20 @@ pc curl myip.ipip.net
 macOS 10.11 后下由于开启了 SIP（System Integrity Protection） 会导致命令行下 proxychains-ng 代理的模式失效，如果使用 proxychains-ng 这种简单的方法，就需要先关闭 SIP。
 重启Mac，按住⌘ + R进入Recovery模式。 实用工具（Utilities）-> 终端（Terminal）。 输入命令csrutil disable运行。 重启进入系统后，终端里输入 csrutil status，结果中如果有 System Integrity Protection status:disabled. 则说明关闭成功。
 ```
-csrutil status
+ ~ csrutil status
 System Integrity Protection status: disabled.
 ```
 我们再试一次：
-```
-pc curl myip.ipip.net
-
+{% highlight bash %}
+ ~  pc curl myip.ipip.net
 [proxychains] config file found: /Users/cary/.proxychains.conf
-
 [proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib
-
 当前 IP：103.152.221.201  来自于：中国 香港   joyso.app
-```
+{% endhighlight %}
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
