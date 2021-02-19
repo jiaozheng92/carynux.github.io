@@ -57,10 +57,3 @@ System Integrity Protection status: disabled.
 [proxychains] preloading /usr/local/Cellar/proxychains-ng/4.14/lib/libproxychains4.dylib
 当前 IP：103.152.221.201  来自于：中国 香港   joyso.app
 {% endhighlight %}
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
