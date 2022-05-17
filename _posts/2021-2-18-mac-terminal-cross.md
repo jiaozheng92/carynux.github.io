@@ -61,8 +61,8 @@ System Integrity Protection status: disabled.
 ### mac OS 10.15.7 获取系统文件读写权限
 * 首先关闭SIP
 * 然后在终端输入以下命令
-```
+{% highlight bash %}
 sudo mount -uw /
 
 killall Finder 
-```
+{% endhighlight %}
